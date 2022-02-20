@@ -1,0 +1,41 @@
+@import '../base/variables';
+@import '../base/extend';
+/*Aqui comienza el body*/
+header{
+    .header__container{ 
+        width: 150px;
+        margin-right: auto;
+        margin-left: auto;
+        .logo{
+            width:150px;
+        }
+    }
+    .navbar{
+            background-color: map-get($color, one);
+            .bg-colapsa {
+                background-color: map-get($color, two);
+            }
+        div{
+            
+            ul{
+                li{
+                    a{
+                        @include btn;
+                        &:hover {
+                            background-color: map-get($color, two);
+                            color: map-get($color, one) !important;
+                            transform: scale(1.1, 1.08);
+                            border-radius: 20%;
+                            transition: 1s;
+                        }
+                    }
+                }
+            }
+        }
+        .navbar-collapse {
+            .dropdown-content {
+                background-color: map-get($color, one);
+            }
+        }
+    }
+}

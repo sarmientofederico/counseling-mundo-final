@@ -1,0 +1,50 @@
+@import '../base/variables';
+@import '../base/extend';
+
+/*Aqui comienza el Footer*/
+.footer{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        background-color: map-get($color, one);
+        color: map-get($color, two);
+        width: 100%;
+        @media screen and (max-width: 485px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            .logoFooter{
+                height: 110px;
+                border: solid 5px map-get($color, one);
+                /*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES AL FOOTER ----*/ 
+                @media screen and (max-width:768px) and (min-width:481px){
+                    display: inline-block;
+                }
+            }
+        }
+        .ctc{
+            text-align: center;
+            margin-top: 80px;
+            padding: 0;
+            @media screen and (max-width:481px){ 
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+            }
+        }
+        .redesSociales{
+            margin-top: 70px;
+            @media screen and (max-width:768px) and (min-width:481px){ 
+                display: flex;
+                justify-content: flex-end;
+                margin: 20px auto 0 auto;
+            }
+        }
+    }
+    section{
+        text-align: center;
+}

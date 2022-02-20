@@ -1,0 +1,32 @@
+@import 'base/variables';
+@import 'base/extend';
+/*Aqui comienza el body*/
+body{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    background-color: rgb(253, 246, 232);
+
+    @media screen and (max-width:480px) and (min-width:320px) {
+    
+        /*------AQUI APLIQUE MODO RESPONSIVE MEDIA QUERRIES AL BODY ----*/    
+
+                font-size: 2rem;
+    }
+    @media screen and (max-width:768px) and (min-width:481px){
+        
+            font-size: 1.5rem;  
+            
+    }
+    
+    h1, h2, h3{
+        font-family: 'Mitr', sans-serif;
+    }
+}
+@import 'components/header';
+@import 'components/main-index';
+@import 'components/footer';
+
